@@ -23,7 +23,7 @@ const addresses = {
    //개발
   //  targetIp : 'http://127.0.0.1:8588'
    //운영
-    targetIp : 'https://server.dmcknft.com'
+    targetIp : 'https://server.dmcknft.com' 
 }
 
 export default addresses
