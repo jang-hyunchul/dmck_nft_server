@@ -165,7 +165,7 @@ app.use('/uploads',express.static('uploads'));
 app.use(
 	//
 	createProxyMiddleware(['/create','/sell','/settle','/cancel','/bid','/buynow','/myAuctionList','/auctionList','/myNFTList','/auctionDetail','/nftDetail','/transfer','/chgMyImg'],{
-		target:'https://dev.dt468jj27btfj.amplifyapp.com',
+		target:'https://dmcknft.com',
 		//target:'http://127.0.0.1:3000',
 		changeOrigin:true
 	})
