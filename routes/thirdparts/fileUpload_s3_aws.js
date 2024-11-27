@@ -7,8 +7,8 @@ const moment = require('moment');
 //aws-sdk, multer-s3 설치 필요 
 
 const s3 = new aws.S3({
-  accessKeyId: 'AKIATQPD7L6TEKGG3XGZ', // 생성한 s3의 accesskey 
-  secretAccessKey: '34m+TMtOxaHgqTDiwXBiItqlrZcbhbF6oLokTB4q', // 생성한 s3의 secret key 
+  accessKeyId: global.env.WS_ACCESS_KEY_ID, // 생성한 s3의 accesskey 
+  secretAccessKey: global.env.AWS_SECRET_ACCESS_KEY, // 생성한 s3의 secret key 
   region: 'ap-southeast-2'  // 지역설정 
 })
 
