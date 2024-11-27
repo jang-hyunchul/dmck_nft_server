@@ -71,12 +71,12 @@ class ethfuncs {
 
 		//let provider = new HDWalletProvider('1f89ad4118dc9a0ed4b83caa4eb782d90c4ce9eb075bedbbf820a15797f69c47', `http://13.125.218.17:8545`)
 		
-		let provider = new HDWalletProvider('5db3b020bec4bd4e5f0404d1ef9583e8752be8e9a9ec4279528d982bcf083df9', `https://mainnet.infura.io/v3/5b72559c2fb641838bab583d3f8a7f94`)
-		this.web3 = new Web3(provider);
-		// this.web3 = new Web3(url);
-		this.chain = 'ETH'; 
-		this.chainId = 1;
-		this.contractAbi = '';
+		// let provider = new HDWalletProvider('5db3b020bec4bd4e5f0404d1ef9583e8752be8e9a9ec4279528d982bcf083df9', `https://mainnet.infura.io/v3/5b72559c2fb641838bab583d3f8a7f94`)
+		// this.web3 = new Web3(provider);
+		// // this.web3 = new Web3(url);
+		// this.chain = 'ETH'; 
+		// this.chainId = 1;
+		// this.contractAbi = '';
 	}
 
 	
