@@ -7,14 +7,14 @@ const moment = require('moment');
 //aws-sdk, multer-s3 설치 필요 
 
 const s3 = new aws.S3({
-  accessKeyId: 'AKIAXYKJT736DKS47BWA', // 생성한 s3의 accesskey 
-  secretAccessKey: 'wubkajjyKGRqWuS1/8U5mcJy8CNdsReHF3bcqc2/', // 생성한 s3의 secret key 
+  accessKeyId: 'AKIATQPD7L6TEKGG3XGZ', // 생성한 s3의 accesskey 
+  secretAccessKey: '34m+TMtOxaHgqTDiwXBiItqlrZcbhbF6oLokTB4q', // 생성한 s3의 secret key 
   region: 'ap-southeast-2'  // 지역설정 
 })
 
 const storage = multerS3({
   s3: s3,
-  bucket: 'dodogonft', // s3 생성시 버킷명
+  bucket: 'dmcknft', // s3 생성시 버킷명
   acl: 'public-read',   // 업로드 된 데이터를 URL로 읽을 때 설정하는 값입니다. 업로드만 한다면 필요없습니다.
   metadata: function (req, file, cb) {
     cb(null, {fieldName: file.fieldname}); // 파일 메타정보를 저장합니다.
